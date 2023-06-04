@@ -1,7 +1,7 @@
 const url = "https://api.adviceslip.com/advice";
 const advice = document.querySelector(".advice");
 const number = document.querySelector("h1");
-const button = document.querySelector("button");
+const iconDice = document.querySelector(".icon-dice");
 
 function generateAdvice() {
   fetch(url)
@@ -17,4 +17,4 @@ function generateAdvice() {
 }
 
 generateAdvice();
-button.addEventListener("click", generateAdvice);
+iconDice.addEventListener("click", generateAdvice);
